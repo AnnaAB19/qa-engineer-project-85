@@ -30,3 +30,209 @@
     - Нажимаем кнопку «Войти»
   expected-result: |
     Пользователь должен получить сообщение об ошибке
+
+- summary: |
+    Проверка регистрации пользователя
+  requirement: |
+    При указании валидных данных должна произойти успешная регистрация на сайте
+  prerequisites: |
+    Открыта страница сайта 
+  test-data: |
+    Логин = ilona Пароль = password
+  steps:
+    - Нажимаем кнопку Sign up
+    - Вводим Nickname
+    - Вводим Email
+    - Вводим Password
+    - Вводим Password Confirmation
+    - Нажимаем кнопку Submit
+  expected-result: |
+    Пользователь должен попасть на главную страницу
+
+- summary: |
+    Проверка входа пользователя с существующими Email и паролем
+  requirement: |
+    При правильном Email и пароле пользователь должен попасть на главную страницу
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Логин = Логин = hexlet Пароль = badpass
+  steps:
+    - Нажимаем кнопку Sign in
+    - Вводим Email
+    - Вводим Password
+    - Нажимаем кнопку Submit
+  expected-result: |
+    Пользователь должен попасть на главную страницу
+    
+- summary: |
+    Проверка входа пользователя с несуществующими Email и паролем
+  requirement: |
+    При неправильном Email или паролем пользователь должен получить сообщение об ошибке
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Логин = Логин = hexlet Пароль = badpass
+  steps:
+    - Вводим Email
+    - Вводим Password
+    - Нажимаем кнопку Submit
+  expected-result: |
+    Пользователь должен получить сообщение об ошибке
+
+- summary: |
+    Проверка возможности просмотра My profile
+  requirement: |
+    При входе в My profile пользователь должен увидеть личную статистику и завершенные игры.
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Логин = Логин = hexlet Пароль = badpass
+  steps:
+    - Входим в аккаунт
+    - На главной странице в меню выбираем My profile
+  expected-result: |
+    Пользователь должен увидеть личную статистику и завершенные игры.  
+
+- summary: |
+    Проверка возможности менять Settings.
+  requirement: |
+    В разделе Settings можно менять настройки.
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Пользователь авторизован
+  steps:
+    - Открываем Settings
+    - Меняем настройки
+    - Нажимаем кнопку Save
+  expected-result: |
+    Новые настройки успешно сохраняются.
+
+- summary: |
+    Проверка возможности просмотра Users rating Weekly, monthly и total
+  requirement: |
+    Возможно просмотреть Users rating Weekly, monthly и total.
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Пользователь авторизован
+  steps:
+    - Открываем Users rating
+    - Выбираем Weekly, monthly или total
+  expected-result: |
+    Отображается Users rating Weekly, monthly или total.    
+
+ - summary: |
+    Проверка возможности сортировать Users rating по Rank, Rating, Games played или Joined.  
+  requirement: |
+    Возможно сортировать Users rating по Rank, Rating, Games played или Joined.
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Пользователь авторизован
+  steps:
+    - Открываем Users rating
+    - Сортируем по Rank, Rating, Games played или Joined
+  expected-result: |
+    Users rating сортируется по выбранному столбцу.
+
+- summary: |
+    Проверка возможности просмотра списка Tasks
+  requirement: |
+    Возможно просмотреть список Tasks
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Пользователь авторизован
+  steps:
+    - Открываем Tasks
+  expected-result: |
+    Отображается список Tasks.  
+
+- summary: |
+    Проверка возможности просмотра любой задачи
+  requirement: |
+    Возможно просмотреть любую задачу
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Пользователь авторизован
+  steps:
+    - Открываем Tasks
+    - Нажимаем кнопку Show в любой задаче
+  expected-result: |
+    Отображается описание задачи.        
+
+- summary: |
+    Проверка возможности создания новой задачи
+  requirement: |
+    Возможно создать новую задачу
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Пользователь авторизован
+  steps:
+    - Открываем Tasks
+    - Нажимаем кнопку Create New Task
+  expected-result: |
+    Появляется форма создания новой задачи
+
+ - summary: |
+    Проверка возможности просмотра Task packs
+  requirement: |
+    Возможно просмотреть список Task packs
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Пользователь авторизован
+  steps:
+    - Открываем Tasks
+    - Нажимаем кнопку Task packs
+  expected-result: |
+    Отображается список Task packs. 
+
+- summary: |
+    Проверка возможности создания нового Task pack
+  requirement: |
+    Возможно создать новый Task pack
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Пользователь авторизован
+  steps:
+    - Открываем Tasks
+    - Нажимаем кнопку Create New Task pack
+  expected-result: |
+    Появляется форма создания нового Task pack   
+
+- summary: |
+    Проверка возможности просмотра списка Турниров
+  requirement: |
+    Возможно просмотреть список турниров
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Пользователь авторизован
+  steps:
+    - Открываем Tournaments
+  expected-result: |
+    Отображается список Турниров    
+
+ - summary: |
+    Проверка возможности выйти из аккаунта.
+  requirement: |
+    Возможно выйти из аккаунта.
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Пользователь авторизован
+  steps:
+    - В меню в правом верхнем углу нажимаем Sign Out
+  expected-result: |
+    Пользователь вышел из аккаунта.   
+    
+    
+    
+         
+    
