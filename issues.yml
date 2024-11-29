@@ -3,3 +3,153 @@
 issues:
   - url: "https://github.com/hexlet-codebattle/codebattle/issues/1202"
   - url: "https://github.com/hexlet-codebattle/codebattle/issues/1173"
+
+  accept ошибка 
+- summary: |
+    После принятия приглашения на игру появдяется ошибка
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Нажать на значок приглашения
+    2. нажать кнопку accept
+  expected-result: |
+    После нажатия кнопки accept начинается игра
+  actual-result: |
+    После принятия приглашения на игру появдяется ошибка баг01
+
+create new task
+ - summary: |
+    При попытке создать новую задачу, появляется пустая страница
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Зайти в раздел Tasks
+    2. нажать кнопку Create New task
+  expected-result: |
+    Появляется форма создания новой задачи
+  actual-result: |
+    При попытке создать новую задачу, появляется пустая страница баг02
+
+decline ошибка
+- summary: |
+    После нажатия кнопки decline не происходит отказ от приглашения
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Нажать на значок приглашения
+    2. нажать кнопку decline
+  expected-result: |
+    После нажатия кнопки decline, происходит отказ от приглашения
+  actual-result: |
+    После нажатия кнопки decline, не происходит отказ от приглашения, приглашение по-прежнему отображается баг03
+
+нестабильно follow pause-unpause-unfollow
+- summary: |
+    Нестабильная работа функции follow
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Нажать follow у любого пользователя
+    2. На значке follow в правом верхнем углу несколько раз поменять pause и unpause
+    3. Нажать unfollow
+  expected-result: |
+    После нажатия кнопок pause-unpause-unfollow, меняется статус функции follow
+  actual-result: |
+    функция follow работает нестабильно, статус функции перестает меняться  баг04
+
+level game
+- summary: |
+    После выбора уровня игры, начинается игра с другим уровнем
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Создать игру с ботом
+    2. Выбрать уровень сложности игры
+    3. начать игру
+  expected-result: |
+    Начинается игра с задачей выбранного уровня
+  actual-result: |
+    После выбора уровня игры, начинается игра с другим уровнем  баг05
+
+notification general
+- summary: |
+    После выбора в чате вкладки notification остается активным окно ввода сообщений для general
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Открыть главную страницу
+    2. в чате выбрать вкладку notification
+    3. написать сообщение
+    4. нажать send
+    5. перейти в general чата
+  expected-result: |
+    После выбора в чате вкладки notification окно ввода сообщений неактивно
+  actual-result: |
+    После выбора в чате вкладки notification остается активным окно ввода сообщений для general баг06
+
+notification general
+- summary: |
+    После выбора в чате вкладки notification остается активным окно ввода сообщений для general
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Открыть главную страницу
+    2. в чате выбрать вкладку notification
+    3. написать сообщение
+    4. нажать send
+    5. перейти в general чата
+  expected-result: |
+    После выбора в чате вкладки notification окно ввода сообщений неактивно
+  actual-result: |
+    После выбора в чате вкладки notification остается активным окно ввода сообщений для general баг06
+
+- summary: |
+    Некорректное отображение количества online players
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Открыть главную страницу
+    2. посмотреть раздел online players
+  expected-result: |
+    отображается корректное колличество online players
+  actual-result: |
+    Некорректное отображение количества online players баг07
+
+- summary: |
+    Присваивается некорректный rank при регистрациии нового пользователя
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. зарегистрировать нового пользователя
+    2. перейти в профиль
+  expected-result: |
+    присваивается корректный rank при регистрациии нового пользователя
+  actual-result: |
+    Присваивается некорректный rank при регистрациии нового пользователя баг08
+
+
+
+- summary: |
+    Не работает сортировка по rating в Users rating при weekly или monthly
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Нажать ссылку Top list на главной странице
+    2. выбрать weekly или monthly
+    3. нажать на сортировку по столбцу rating
+  expected-result: |
+    происходит сортировка по rating в Users rating при weekly или monthly 
+  actual-result: |
+    При weekly или monthly не происходит сортировка по rating в Users rating, сортируется по rank баг09
+
+
