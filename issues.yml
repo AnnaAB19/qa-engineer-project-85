@@ -152,4 +152,49 @@ notification general
   actual-result: |
     При weekly или monthly не происходит сортировка по rating в Users rating, сортируется по rank баг09
 
+- summary: |
+    Не работает гид, пропущены шаги 4-6, на шаге 7 не работает кнопка назад
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Начать игру
+    2. Нажать show guide
+    3. Нажимать кнопки next и back
+  expected-result: |
+    Гид работает, показывает все шаги, кнопка назад работает на всех шагах 
+  actual-result: |
+    Не работает гид, пропущены шаги 4-6, на шаге 7 не работает кнопка назад баг10
+
+ - summary: |
+    в списке task packs отображаются только пакеты текущего пользователя
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Начать игру
+    2. Нажать show guide
+    3. Нажимать кнопки next и back
+  expected-result: |
+    в списке task packs отображаются все пакеты, разных пользователей 
+  actual-result: |
+    в списке task packs отображаются только пакеты текущего пользователя баг11
+
+- summary: |
+    Не сохраняется выбор звука Standard
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. перейти в settings
+    2. выбрать звук Standard
+    3. Нажать save
+    4. перезагрузить страницу
+  expected-result: |
+    Выбор звука Standard сохранился 
+  actual-result: |
+    Не сохраняется выбор звука Standard баг12
+
+    
+
 
