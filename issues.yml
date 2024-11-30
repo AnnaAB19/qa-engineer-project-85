@@ -4,7 +4,7 @@ issues:
   - url: "https://github.com/hexlet-codebattle/codebattle/issues/1202"
   - url: "https://github.com/hexlet-codebattle/codebattle/issues/1173"
 
-  accept ошибка 
+  accept ошибка "https://github.com/hexlet-codebattle/codebattle/issues/2007#issuecomment-2508943001"
 - summary: |
     После принятия приглашения на игру появдяется ошибка
   environment: |
@@ -18,7 +18,7 @@ issues:
   actual-result: |
     После принятия приглашения на игру появдяется ошибка баг01
 
-create new task
+create new task "https://github.com/hexlet-codebattle/codebattle/issues/2000#issuecomment-2508949422"
  - summary: |
     При попытке создать новую задачу, появляется пустая страница
   environment: |
@@ -32,7 +32,7 @@ create new task
   actual-result: |
     При попытке создать новую задачу, появляется пустая страница баг02
 
-decline ошибка
+decline ошибка 
 - summary: |
     После нажатия кнопки decline не происходит отказ от приглашения
   environment: |
@@ -46,7 +46,7 @@ decline ошибка
   actual-result: |
     После нажатия кнопки decline, не происходит отказ от приглашения, приглашение по-прежнему отображается баг03
 
-нестабильно follow pause-unpause-unfollow
+нестабильно follow pause-unpause-unfollow "https://github.com/hexlet-codebattle/codebattle/issues/1957#issuecomment-2508953331"
 - summary: |
     Нестабильная работа функции follow
   environment: |
@@ -61,7 +61,7 @@ decline ошибка
   actual-result: |
     функция follow работает нестабильно, статус функции перестает меняться  баг04
 
-level game
+level game  https://github.com/hexlet-codebattle/codebattle/issues/1696#issuecomment-2508956026
 - summary: |
     После выбора уровня игры, начинается игра с другим уровнем
   environment: |
@@ -76,7 +76,7 @@ level game
   actual-result: |
     После выбора уровня игры, начинается игра с другим уровнем  баг05
 
-notification general
+notification general   https://github.com/hexlet-codebattle/codebattle/issues/1581#issuecomment-2508958299 
 - summary: |
     После выбора в чате вкладки notification остается активным окно ввода сообщений для general
   environment: |
@@ -138,7 +138,7 @@ notification general
 
 
 
-- summary: |
+- summary: |  https://github.com/hexlet-codebattle/codebattle/issues/1752#issuecomment-2508963862
     Не работает сортировка по rating в Users rating при weekly или monthly
   environment: |
     Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
@@ -152,7 +152,7 @@ notification general
   actual-result: |
     При weekly или monthly не происходит сортировка по rating в Users rating, сортируется по rank баг09
 
-- summary: |
+- summary: |   https://github.com/hexlet-codebattle/codebattle/issues/1939#issuecomment-2508966315
     Не работает гид, пропущены шаги 4-6, на шаге 7 не работает кнопка назад
   environment: |
     Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
