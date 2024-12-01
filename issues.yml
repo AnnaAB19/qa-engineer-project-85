@@ -166,21 +166,9 @@ notification general
   actual-result: |
     Не работает гид, пропущены шаги 4-6, на шаге 7 не работает кнопка назад баг10
 
- - summary: |
-    в списке task packs отображаются только пакеты текущего пользователя
-  environment: |
-    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
-    ОС Windows 11
-  steps-to-reproduce: |
-    1. Начать игру
-    2. Нажать show guide
-    3. Нажимать кнопки next и back
-  expected-result: |
-    в списке task packs отображаются все пакеты, разных пользователей 
-  actual-result: |
-    в списке task packs отображаются только пакеты текущего пользователя баг11
 
-- summary: |
+
+- summary: |   https://github.com/hexlet-codebattle/codebattle/issues/1960#issuecomment-2510129848
     Не сохраняется выбор звука Standard
   environment: |
     Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
@@ -194,6 +182,82 @@ notification general
     Выбор звука Standard сохранился 
   actual-result: |
     Не сохраняется выбор звука Standard баг12
+
+- summary: | https://github.com/hexlet-codebattle/codebattle/issues/1958#issuecomment-2510162080
+    После восстановления пароля, окно восстановления пароля отображается после успешного входа
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. перейти на страницу входа
+    2. нажать forgot your password
+    3. указать email
+    4. нажать submit
+    5. нажать Sign in
+    6. войти в систему
+  expected-result: |
+    После входа откроется главная страница 
+  actual-result: |
+    После восстановления пароля, окно восстановления пароля отображается после успешного входа. баг13
+
+- summary: |  https://github.com/hexlet-codebattle/codebattle/issues/2008#issuecomment-2510178838
+    при создании турнира можно указать дату ранее текущей
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. перейти в список турниров
+    2. нажать Create a new tournament
+    3. установить название, параметры
+    4. указать дату ранее текущей
+    5. нажать create
+  expected-result: |
+    при создании турнира нельзя указать дату ранее текущей 
+  actual-result: |
+    при создании турнира можно указать дату ранее текущей, турнир успешно создан. баг14
+
+- summary: |
+    нет кнопки возврата к списку турниров в турнирах со state waiting_participants
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. перейти в список турниров
+    2. найти турнир со state waiting_participants
+    3. нажать show
+  expected-result: |
+    есть кнопка возврата к списку турниров в турнирах со state waiting_participants.  
+  actual-result: |
+    нет кнопки возврата к списку турниров в турнирах со state waiting_participants. баг15
+
+- summary: |  https://github.com/hexlet-codebattle/codebattle/issues/2006#issuecomment-2510192243
+    чат внутри турнира не активен
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. перейти в список турниров
+    2. нажать show напротив турнира со state waiting_participants
+    3. нажать join    
+  expected-result: |
+    можно отправить сообщение в чате.  
+  actual-result: |
+    чат внутри турнира не активен. баг16
+
+
+    - summary: |
+    в списке task packs отображаются только пакеты текущего пользователя
+  environment: |
+    Google Chrome	128.0.6613.138 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Начать игру
+    2. Нажать show guide
+    3. Нажимать кнопки next и back
+  expected-result: |
+    в списке task packs отображаются все пакеты, разных пользователей 
+  actual-result: |
+    в списке task packs отображаются только пакеты текущего пользователя баг11 
 
     
 
