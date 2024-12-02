@@ -1,11 +1,5 @@
-в нем должны быть ссылки на открытые баг-репорты
 ---
 issues:
-  - url: "https://github.com/hexlet-codebattle/codebattle/issues/1202"
-  - url: "https://github.com/hexlet-codebattle/codebattle/issues/1173"
-
-
-
   - url: "https://github.com/hexlet-codebattle/codebattle/issues/2007#issuecomment-2508943001"
   - url: "https://github.com/hexlet-codebattle/codebattle/issues/2000#issuecomment-2508949422"
   - url: "https://github.com/hexlet-codebattle/codebattle/issues/1957#issuecomment-2508953331"
@@ -19,4 +13,3 @@ issues:
   - url: "https://github.com/hexlet-codebattle/codebattle/issues/2017#issue-2711153843"
   - url: "https://github.com/hexlet-codebattle/codebattle/issues/2006#issuecomment-2510192243"
   - url: "https://github.com/hexlet-codebattle/codebattle/issues/1999#issuecomment-2511831664"
-  
