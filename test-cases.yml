@@ -63,21 +63,6 @@
     Пользователь должен увидеть личную статистику и завершенные игры.  
 
 - summary: |
-    Проверка возможности менять Settings.
-  requirement: |
-    В разделе Settings можно менять настройки.
-  prerequisites:
-    Открыта страница сайта
-  test-data: |
-    Пользователь авторизован
-  steps:
-    - Открываем Settings
-    - Меняем настройки
-    - Нажимаем кнопку Save
-  expected-result: |
-    Новые настройки успешно сохраняются.
-
-- summary: |
     Проверка возможности просмотра Users rating Weekly, monthly и total
   requirement: |
     Возможно просмотреть Users rating Weekly, monthly и total.
