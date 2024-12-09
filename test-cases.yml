@@ -377,3 +377,111 @@
     - Смотрим рейтинг
   expected-result: |
     Пользователи получают очки, на основе которых строится рейтинг за неделю, месяц и за все время
+
+- summary: |
+    Проверка регистрации пользователя с учетной записью GitHub
+  requirement: |
+    Проверка регистрации пользователя с учетной записью GitHub
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Пользователь зарегестрирован на GitHub
+  steps:
+    - Нажимаем Sign up
+    - Нажимаем Sign in with GitHub
+  expected-result: |
+    Пользователь успешно зарегистрирован и должен попасть на главную страницу 
+
+- summary: |
+    Проверка возможности менять Your name в Settings.
+  requirement: |
+    В разделе Settings можно менять Your name.
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Пользователь авторизован
+  steps:
+    - Открываем Settings
+    - Меняем Your name
+    - Нажимаем кнопку Save
+  expected-result: |
+    Новые настройки Your name успешно сохраняются  
+
+- summary: |
+    Проверка возможности менять язык программирования в разделе Your weapon в Settings.
+  requirement: |
+    В разделе Settings можно менять язык программирования в разделе Your weapon.
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Пользователь авторизован
+  steps:
+    - Открываем Settings
+    - Меняем Your weapon
+    - Нажимаем кнопку Save
+  expected-result: |
+    Новые настройки языка программирования в разделе Your weapon успешно сохраняются. 
+
+- summary: |
+    Проверка возможности менять Sound Type в Settings.
+  requirement: |
+    В разделе Settings можно менять Sound Type.
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Пользователь авторизован
+  steps:
+    - Открываем Settings
+    - Меняем Sound Type
+    - Нажимаем кнопку Save
+  expected-result: |
+    Новые настройки Sound Type успешно сохраняются.   
+
+- summary: |
+    Проверка возможности во время игры проверить свой код нажатием на кнопку Run.
+  requirement: |
+    Возможно во время игры проверить свой код нажатием на кнопку Run.
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Создана игра
+    Выбраны параметры
+    Нажато Create battle
+  steps:    
+    - Решаем задачу
+    - Нажимаем кнопку Run
+  expected-result: |
+    В разделе Output появляются результаты проверки решения задачи.   
+
+- summary: |
+    Проверка работы кнопки Reset solution
+  requirement: |
+    Можно сбросить ранее написанный код нажатием кнопки Reset solution.
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Создана игра
+    Выбраны параметры
+    Нажато Create battle
+  steps:    
+    - Пишем код для решения задачи
+    - Нажимаем кнопку Reset solution
+  expected-result: |
+    Происходит сброс ранее написанного кода нажатием кнопки Reset solution.
+
+- summary: |
+    Проверка возможности сдаться во время игры нажатием на кнопку Give Up.
+  requirement: |
+    Возможно сдаться во время игры нажатием на кнопку Give Up.
+  prerequisites:
+    Открыта страница сайта
+  test-data: |
+    Создана игра
+    Выбраны параметры
+    Нажато Create battle
+  steps:    
+    - Нажимаем кнопку Give Up
+  expected-result: |
+    В разделе Output появляются результаты проверки решения задачи.       
+        
+    
