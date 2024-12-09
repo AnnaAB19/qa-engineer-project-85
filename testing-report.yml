@@ -16,10 +16,6 @@
   status: pass 
 
 - summary: |
-    Проверка возможности менять Settings.
-  status: pass
-
-- summary: |
     Проверка возможности просмотра Users rating Weekly, monthly и total
   status: pass    
 
@@ -101,4 +97,32 @@
    
 - summary: |
     Пользователи получают очки, на основе которых строится рейтинг за неделю, месяц и за все время  
+  status: pass
+
+- summary: |
+    Проверка регистрации пользователя с учетной записью GitHub
+  status: pass
+ 
+- summary: |
+    Проверка возможности менять Your name в Settings.
+  status: pass
+
+- summary: |
+    Проверка возможности менять язык программирования в разделе Your weapon в Settings.
+  status: pass
+
+- summary: |
+    Проверка возможности менять Sound Type в Settings.
+  status: fail     
+
+- summary: |
+    Проверка возможности во время игры проверить свой код нажатием на кнопку Run.
+  status: pass
+
+- summary: |
+    Проверка работы кнопки Reset solution
+  status: pass
+
+- summary: |
+    Проверка возможности сдаться во время игры нажатием на кнопку Give Up.
   status: pass
